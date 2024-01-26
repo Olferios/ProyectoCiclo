@@ -37,14 +37,55 @@ header {
     justify-content: space-around;
     align-items: center;
 
-  }
+}
   
-  #menu li {
+#menu li {
     margin:0; 
-  }
+}
   
-  #menu a {
+#menu a {
     text-decoration: none;
     color: white; 
     font-size: 30px;
-  }
+}
+#bodyuno{
+    display: flex;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 0px 3px whitesmoke;
+
+}
+
+.boton {
+    width: 100px;
+    padding: 5px;
+    background-color: #ff702a;
+    border: 1px solid #ff702a;
+    color:white;
+    display: inline-block;
+    
+    
+}
+#cajauno{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    text-align: left;
+    
+}
+#cajauno h1{
+    font-size: 30px;
+    color:#ff702a;
+    
+}
+#cajauno a{
+    color:white;
+
+
+}
+#cajauno.boton{
+    text-align: left;
+}
+#cajados{
+    display:flex;
+}
