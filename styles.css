@@ -1,0 +1,50 @@
+body {
+    background-color: #1e1d2b;
+}
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 1px;
+}
+
+#logo {
+    width: 50%;
+    
+    list-style: none;
+    padding: 10px;
+    margin-left:40px ;
+    
+    
+}
+#logo a{
+    color:#ff702a;
+    font-size: 50px;
+    
+}
+#menu{
+    float: right;
+    width:50%
+}
+
+
+#menu ul {
+    width:100%;
+    list-style: none;
+    padding: 10px;
+    margin:6px ;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  
+  #menu li {
+    margin:0; 
+  }
+  
+  #menu a {
+    text-decoration: none;
+    color: white; 
+    font-size: 30px;
+  }
