@@ -1,91 +1,186 @@
 body {
     background-color: #1e1d2b;
-}
-header {
+ }
+ header {
     height: 100px;
     width: 100%;
     display: flex;
     padding: 1px;
-}
-
-#logo {
+ }
+ 
+ 
+ #logo {
     width: 50%;
-    
+   
     list-style: none;
     padding: 10px;
     margin-left:40px ;
-    
-    
-}
-#logo a{
+   
+   
+ }
+ #logo a{
     color:#ff702a;
     font-size: 50px;
-    
-}
-#menu{
+    font-family: 'Raleway', sans-serif;
+   
+ }
+ #menu{
     float: right;
     width:50%
-}
-
-
-#menu ul {
+ }
+ 
+ 
+ 
+ 
+ #menu ul {
     width:100%;
     list-style: none;
     padding: 10px;
     margin:6px ;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
-
-}
-  
-#menu li {
-    margin:0; 
-}
-  
-#menu a {
+ 
+ 
+ }
+  #menu li {
+    margin:0;
+ }
+  #menu a {
     text-decoration: none;
-    color: white; 
+    color: white;
     font-size: 30px;
-}
+    font-family: 'Raleway', sans-serif;
+ 
+ 
+ }
 #bodyuno{
-    display: flex;
-    border: 1px solid grey;
-    box-shadow: 0px 0px 0px 3px whitesmoke;
-
+    min-height: 90vh;
+    display: flex; 
+ 
+ 
 }
-
-.boton {
-    width: 100px;
+ 
+ 
+ .boton {
+    width: 215px;
+    height: 55px;
     padding: 5px;
     background-color: #ff702a;
-    border: 1px solid #ff702a;
-    color:white;
-    display: inline-block;
-    
-    
-}
+    border: 0px solid #ff702a;  
+    display: inline-block;   
+    margin-top: 10px;
+    border-radius: 10px;   
+   
+ }
+ .boton a{
+   
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color:white;  
+ 
+ 
+ }
+ .boton:hover{
+    transform: scale(1.2);
+    transition: .4s;
+ }
+ 
+ 
 #cajauno{
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-left: 30px;
     text-align: left;
-    
+    padding: 100px;
+   
 }
-#cajauno h1{
-    font-size: 30px;
+ 
+ 
+ #cajauno h1{
+    font-size: 90px;
     color:#ff702a;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin-bottom: 0;
+    
+   
+ }
+ 
+ 
+ #cajauno.boton{
+    text-align: left;
+ }
+ 
+ #texto{
+    width:max-content;
+    height: max-content;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color:white;
+ }
+ #cajados{
+    display:flex;
+    width:50%;
+    height:fit-content;
+}
+#bodydos{
+    min-height: 90vh;
+    display: flex; 
+}
+
+#cajaimagen{
+    display:flex;
+    width:50%;
+    height:fit-content;
+    margin-left: 30px;
+    padding-left: 100px;
     
 }
-#cajauno a{
-    color:white;
-
-
-}
-#cajauno.boton{
+#cajatexto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
     text-align: left;
+    padding: 100px;
 }
-#cajados{
-    display:flex;
+#cajatexto h3{
+    font-size: 30px;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin-bottom: 0;
+}
+#cajatexto h1{
+    font-size: 90px;
+    color:#ff702a;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin-bottom: 0;
+}
+#cajatexto p{
+    width:max-content;
+    height: max-content;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color:white;
+}
+#bodytres{
+    min-height: 90vh;
+    display: flex; 
+}
+.box{
+    border: 1px solid white;
+    background-color: white;    
+    width: 25%;
+    height: 145px;
+    margin:auto;
+    display: flex;
+    
 }
