@@ -2,90 +2,124 @@ body {
     background-color: #1e1d2b;
 }
 header {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    padding: 1px;
+   height: 100px;
+   width: 100%;
+   display: flex;
+   padding: 1px;
 }
+
 
 #logo {
-    width: 50%;
-    
-    list-style: none;
-    padding: 10px;
-    margin-left:40px ;
-    
-    
+   width: 50%;
+  
+   list-style: none;
+   padding: 10px;
+   margin-left:40px ;
+  
+  
 }
 #logo a{
-    color:#ff702a;
-    font-size: 50px;
-    
+   color:#ff702a;
+   font-size: 50px;
+   font-family: 'Raleway', sans-serif;
+  
 }
 #menu{
-    float: right;
-    width:50%
+   float: right;
+   width:50%
 }
-
-
+ 
+ 
+ 
+ 
 #menu ul {
-    width:100%;
-    list-style: none;
-    padding: 10px;
-    margin:6px ;
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
+   width:100%;
+   list-style: none;
+   padding: 10px;
+   margin:6px ;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
 
 }
-  
 #menu li {
-    margin:0; 
+    margin:0;
 }
-  
 #menu a {
     text-decoration: none;
-    color: white; 
+    color: white;
     font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+ 
+ 
 }
 #bodyuno{
+    min-height: 90vh;
     display: flex;
-    border: 1px solid grey;
-    box-shadow: 0px 0px 0px 3px whitesmoke;
-
+   
+ 
+ 
 }
-
+ 
+ 
 .boton {
-    width: 100px;
+    width: 215px;
+    height: 55px;
     padding: 5px;
     background-color: #ff702a;
-    border: 1px solid #ff702a;
-    color:white;
-    display: inline-block;
-    
-    
+    border: 0px solid #ff702a;  
+    display: inline-block;   
+    margin-top: 10px;
+    border-radius: 10px;   
+   
 }
+.boton a{
+   
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color:white;  
+ 
+ 
+}
+.boton:hover{
+    transform: scale(1.2);
+    transition: .4s;
+}
+ 
+ 
 #cajauno{
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-left: 30px;
     text-align: left;
-    
+   
 }
+ 
+ 
 #cajauno h1{
-    font-size: 30px;
+    font-size: 50px;
     color:#ff702a;
-    
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+   
 }
-#cajauno a{
-    color:white;
-
-
-}
+ 
+ 
 #cajauno.boton{
     text-align: left;
 }
 #cajados{
     display:flex;
 }
+#texto{
+    width:max-content;
+    height: max-content;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color:white;
+}
+ 
