@@ -3,68 +3,80 @@ body {
     max-width: 120rem;
     margin:0 auto;
 }
-header {
-    height: 100px;
-    max-width: 120rem;
-    display: flex;
-    padding: 1px;
-}
- 
- 
-#logo {
-    width: 50%;
-   
-    list-style: none;
-    padding: 10px;
-    margin-left:40px ;
-   
-   
-}
-#logo a{
-    color:#ff702a;
-    font-size: 50px;
-    font-family: 'Raleway', sans-serif;
-   
-}
-#menu{
-    float: right;
-    width:50%
-}
- 
- 
- 
- 
-#menu ul {
-    width:100%;
-    list-style: none;
-    padding: 10px;
-    margin:6px ;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- 
- 
-}
-#menu li {
-    margin:0;
-}
-#menu a {
+a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
     font-family: 'Raleway', sans-serif;
- 
- 
+    font-size: 1vw;
+}
+
+ol,ul{
+    list-style: none;
+}
+.header{
+    height:80px ;    
+}
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+.menu_hamburguesa{
+    display: none;
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - 80px);
+}
+.logo{
+    color:#ff702a;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.labe_hamburguesa{
+
+}
+.list_icon{
+    color:white;
+    cursor:pointer;
+}
+.ul_links {
+    width: 100%;
+    
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
+    background-color: #feeee7;
+    color: black;
+}
+.link {
+    font-size: 3em;
+    color:black;
+    font-weight: bold;
+}
+.li_links a{
+    color:black;
+    font-size: 10vw;
+    text-align: center;
+
 }
 #bodyuno{
     min-height: 90vh;
     display: flex; 
-    max-width: 120rem;
- 
- 
-}
- 
- 
+    max-width: 120rem; 
+} 
 .boton {
     width: 215px;
     height: 55px;
@@ -395,76 +407,71 @@ header {
     background: white;
     color:black;
 }
-@media (max-width:870px){
+
+
+
+@media (min-width:870px){
+    
+    .labe_hamburguesa {
+        display: none;
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+    .link:hover{
+        background-color: #5f1192;
+    }
+    bodyuno{
+        min-height: 90vh;
+        
+        max-width: 120rem; 
+    }
+ 
+    
+}
+    
+@media (max-width:869px){
     #bodyuno{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        
+        display: grid;
     }
-    #cajauno {
-        width: 100%; /* O el valor que desees para pantallas pequeñas */
-        margin-left: 0; /* Ajusta según sea necesario */
-        padding: 20px; /* Ajusta según sea necesario */
+    #cajauno{
+        padding: 0;
     }
-    #cajados {
-        width: 100%; /* O el valor que desees para pantallas pequeñas */
-        margin-left: 0; /* Ajusta según sea necesario */
-        padding: 20px; /* Ajusta según sea necesario */
-    }
+    
     #bodydos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-left: 20px;
-        
+        display: grid;
     }
-    #cajaimagen {
-        width: 100%; /* O el valor que desees para pantallas pequeñas */
-        margin-left: 0; /* Ajusta según sea necesario */
-        padding: 20px; /* Ajusta según sea necesario */
+    #cajaimagen{
+        padding-left: 0;
     }
     #cajatexto{
-        width: 80%; /* O el valor que desees para pantallas pequeñas */
-        margin-left: 0; /* Ajusta según sea necesario */
-        padding: 20px;
-        font-size: 60px;
-
-    }
-    .contenedorfooter {
-        flex-direction: column; /* Cambia la dirección a columna para pantallas más pequeñas */
-        align-items: flex-start; /* Alinea a la izquierda */
-    }
-
-    .listafooter {
-        width: 100%; /* O el valor que desees para pantallas pequeñas */
-    }
-    .footer{
-        margin-left: 50px;
-    }
-    .img-producto img{
-        width: 40%;
-        height:40% ;
-    }
-    #cajauno h1{
-        font-size: 60px;
-    }
-    #texto{
-        width:80%
+        padding-left: 0;
+        width:80%;
         
     }
-    .boton{
-        width: 140px;
-        height: 35px;
-        margin-left: 20px;
+    #cajatexto h1{
+        font-size: 10vw;
+        width:100%
     }
-    .boton a{
-        font-size: 20px;
+    #cajatexto p{
+        font-size: 6vw;
+        width: fit-content;
     }
-
-    
-
-
+    #bodyseis{
+        padding-left: 0;
+    }
+    .contenedorfooter{
+        flex-direction: column;
+    }
 }
+
+
