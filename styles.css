@@ -477,6 +477,9 @@ ol,ul{
     .contenedorfooter{
         flex-direction: column;
     }
+    #cajados img{
+        width: 70vw;
+    }
 }
 
 
